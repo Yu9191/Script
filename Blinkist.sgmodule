@@ -7,4 +7,4 @@ Blinkist = type=http-response,pattern=https://api.blinkist.com/v4/me/access,requ
 
 [MITM]
 
-hostname = %APPEND% api.blinkist.comn
+hostname = %APPEND% api.blinkist.com
