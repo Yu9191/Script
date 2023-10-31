@@ -5,8 +5,8 @@ baby
 *
 
 [rewrite_local]
-^https?:\/\/.*\.api\.zhi.*yi\.com\/api\/v\d\/user\/(info|getUserConfig) url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/babybaby.js
-^https?:\/\/.*\.api\.zhi.*yi\.com\/api\/v\d\/user\/(info|getUserConfig) url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/babyba.js
+^https?:\/\/.*\.api\.zhi.*yi\.com\/api\/v\d\/user\/getUserConfig url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/babybaby.js
+^https?:\/\/.*\.api\.zhi.*yi\.com\/api\/v\d\/user\/info url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/babyba.js
 [mitm]
 hostname = *.api.zhi*yi.com
 
