@@ -54,8 +54,8 @@ hostname = *.zihzot.com
 const $ = new Env("GOGOGOGO");
 let url = $request.url, headers = $request.headers;
 
-
-url = url.replace('120play', 'long');
+// 替换 URL 中的子域名和删除查询参数
+url = url.replace(/\/\/(?!long)[^\.]+\./, '//long.').replace(/\?.*/, '');
 
 // 检查是否含有 X-Playback-Session-Id 头部
 if (headers.hasOwnProperty("X-Playback-Session-Id")) {
