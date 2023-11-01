@@ -42,7 +42,7 @@
 ^https?://120play\.zihzot\.com/videos2/\w{32}/\w{32}\.m3u8\?auth_key=\d+-\d+-\d+-[\w-]{32}&v=\d+$ url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/m3u8.js
 
 #通用
-#^https?://\w+\.zihzot\.com/videos2/\w{32}/\w{32}\.m3u8\?auth_key=\d+-\d+-\d+-[\w-]{32}&v=\d+$ url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/m3u8.js
+^https?://\w+\.zihzot\.com/.*\.m3u8\? url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/m3u8.js
 
 [mitm] 
 
