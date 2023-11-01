@@ -39,11 +39,11 @@
 
 [rewrite_local]
 
-^https?:\/\/h5play\.longyuandingyi\.com\/\w{3,10}\/\w{32}\/\w{32}\.m3u8\?auth_key=[\w\-]{30,50}$ url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/m3u8.js
+^https?://120play\.zihzot\.com/videos2/\w{32}/\w{32}\.m3u8\?auth_key=\d+-\d+-\d+-[\w-]{32}&v=\d+$ url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/m3u8.js
 
 [mitm] 
 
-hostname = *longyuandingyi*
+hostname = *.zihzot.com
 
 
 
@@ -55,7 +55,7 @@ const $ = new Env("GOGOGOGO");
 let url = $request.url, headers = $request.headers;
 
 
-url = url.replace('h5play', 'long');
+url = url.replace('120play', 'long');
 
 // 检查是否含有 X-Playback-Session-Id 头部
 if (headers.hasOwnProperty("X-Playback-Session-Id")) {
