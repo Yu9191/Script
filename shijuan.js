@@ -6,7 +6,7 @@
 
 [mitm] 
 
-hostname = *.zihzot.com
+hostname = cdn-h.gongfudou.com
 
 
 
