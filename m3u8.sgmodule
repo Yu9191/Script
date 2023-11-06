@@ -1,11 +1,1 @@
-#!name=色胚子
-#!desc=色胚子
-
-[Script]
-
-#涩涩视频
-m3u8 = type=http-request,pattern=^https?://(\w+\.vzcnqmr\.cn)/(\w+)/\w{32}/\w{32}\.m3u8\?,requires-body=0,script-path=https://raw.githubusercontent.com/Yu9191/Script/main/m3u8surgeloon.js
-
-[MITM]
-
-hostname = %APPEND% *.vzcnqmr.cn
+无
