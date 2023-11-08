@@ -7,4 +7,4 @@ yijietu2 = type=http-response,pattern=^https?:\/\/(jietu6|1jietu|superjietu)\.co
 
 [MITM]
 
-hostname = %APPEND% superjietu.com
+hostname = %APPEND% superjietu.com, jietu6.com, 1jietu.com
