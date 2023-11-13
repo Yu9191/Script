@@ -29,8 +29,8 @@ hostname = cdn-h.gongfudou.com, api.xbxxhz.com
 const $ = new Env("GOGOGOGO");
 let url = $request.url, headers = $request.headers;
 
-// 检查 "User-Agent"QuanX是大写
-if (headers.hasOwnProperty("user-agent") && headers["user-agent"].includes("%E5%B0%8F%E7%99%BD%E5%AD%A6%E4%B9%A0%E7%9B%92%E5%AD%90")) {
+// 检查 "User-Agent"
+if ((headers.hasOwnProperty("user-agent") && headers["user-agent"]) || (headers.hasOwnProperty("User-Agent") && headers["User-Agent"])) {
     const jpgRegex = /^https:\/\/cdn-h\.gongfudou\.com\/.*?\/[0-9a-fA-F-]+\.jpg$/;
 
     const jpgMatch = url.match(jpgRegex);
