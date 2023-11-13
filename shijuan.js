@@ -24,7 +24,7 @@ https://epbox.gongfudou.com/graphql url script-response-body https://raw.githubu
 ^https:\/\/api\.xbxxhz\.com\/big_data\/v1\/home_pages url reject
 [mitm] 
 
-hostname = cdn-h.gongfudou.com, api.xbxxhz.com, epbox.gongfudou.com
+hostname = cdn-h.gongfudou.com, api.xbxxhz.com, epbox.gongfudou.com, vodsource.xkw.com
 
 
 
