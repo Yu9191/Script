@@ -16,7 +16,7 @@ if：
 #ai试卷
 ^https:\/\/cdn-h\.gongfudou\.com\/.*?\/[0-9a-fA-F-]+\.jpg$ url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/shijuan.js
 #ai精准学视频讲解
-^https:\/\/vodsource\.xkw\.com\/xkw-media\/.*\.m3u8  url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/shijuan.js
+^https:\/\/vodsource\.xkw\.com\/xkw-media\/.*\.m3u8 url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/shijuan.js
 #解锁部分试卷权限 你可以选择不跳转直接打印
 https://epbox.gongfudou.com/graphql url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/xiaobai.js
 
