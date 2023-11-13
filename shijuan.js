@@ -14,10 +14,11 @@ if：
 [rewrite_local]
 
 ^https:\/\/cdn-h\.gongfudou\.com\/.*?\/[0-9a-fA-F-]+\.jpg$ url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/shijuan.js
-
+#开屏广告
+^https:\/\/api\.xbxxhz\.com\/big_data\/v1\/home_pages url reject
 [mitm] 
 
-hostname = cdn-h.gongfudou.com
+hostname = cdn-h.gongfudou.com, api.xbxxhz.com
 
 
 
