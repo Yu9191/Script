@@ -37,11 +37,18 @@ let url = $request.url, headers = $request.headers;
 
 // 检查 "cdn-h.gongfudou.com" 的 jpg 地址
 const jpgRegex = /^https:\/\/cdn-h\.gongfudou\.com\/.*?\/[0-9a-fA-F-]+\.jpg$/;
+const m3u8Regex = /^https:\/\/vodsource\.xkw\.com\/xkw-media\/.*\.m3u8$/;
+
 const jpgMatch = url.match(jpgRegex);
+const m3u8Match = url.match(m3u8Regex);
 
 if (jpgMatch) {
-    url = jpgMatch[0]; 
+    //  jpg 
+    url = jpgMatch[0];
     $.msg("Jpg链接捕获成功", "点击在线观看", "JPG链接", url);
+} else if (m3u8Match) {
+    // m3u8 
+    $.msg("视频链接捕获成功", "点击此通知在线观看", "通知详细", url);
 } else {
     // 检查 "User-Agent"
     const isUserAgent = (headers.hasOwnProperty("user-agent") && headers["user-agent"]) || (headers.hasOwnProperty("User-Agent") && headers["User-Agent"]);
