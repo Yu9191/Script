@@ -1,9 +1,16 @@
 /**
-小白打印机 试卷提取
+小白打印机 试卷提取 
+仅测试Surge
 @ios151,可搭配Remini 
 说明：因为获取的图片不是高清 所以搭配Remini高清复原还是蛮不错的
 下载地址：Remini  https://t.cn/AiE8fHDr 
 Remini的脚本：https://raw.githubusercontent.com/chxm1023/Rewrite/main/bending.js
+if：
+获取的图片地址为：https://cdn-h.gongfudou.com/a2p/2023/8/29/ac245a40-5e8c-11ee-885b-31361ee24ee0-1.jpg
+那么这是第一张图片 你可以看第一张图片里面 页数说明 1/5 
+那么复制这个链接 通过快捷指令 运行选择“5” 然后保存五张试卷
+感谢@WVVWeng的快捷指令
+快捷指令：https://www.icloud.com/shortcuts/17836d4ffdb54f778ed68f0dc5a4acaf
 [rewrite_local]
 
 ^https:\/\/cdn-h\.gongfudou\.com\/.*?\/[0-9a-fA-F-]+\.jpg$ url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/shijuan.js
