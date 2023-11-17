@@ -7,4 +7,4 @@
 lianqin  = type=http-response,pattern=https?:\/\/api\.(.*lianqin.*|mangofuture)\.(com|cn)\/client\/v\d\/(user_vip|my_info),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Script/main/yiqilianqin.js
 
 [MITM]
-hostname= %APPEND% api.17lianqin.cn, api.lianqinba.com, api.mangofuture.cn
+hostname= %APPEND% api.17lianqin.cn, %APPEND% api.lianqinba.com, %APPEND% api.mangofuture.cn
