@@ -2,7 +2,7 @@
 问真八字
 
 [rewrite_local]
-^https?:\/\/bzpp2\.iwzbz\.com\/api\/.*\/user\/getvipinfo url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/wenzhenpaipan.js
+^https?:\/\/bzpp2\.iwzbz\.com\/api\/.*\/user\/getvipinfo url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/wenzhenbazi.js
 [mitm]
 hostname = bzpp2.iwzbz.com
 */
