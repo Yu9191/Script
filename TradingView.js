@@ -9,7 +9,7 @@ https://cn.tradingview.com/api/v1/user/profile/me/ url script-response-body http
 https://cn.tradingview.com/order/apple/receipt/ url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/TradingView.js
 
 [mitm]
-hostname = api.apphud.com
+hostname = cn.tradingview.com
 
 */
 var body = $response.body;
