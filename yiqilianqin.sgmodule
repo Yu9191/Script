@@ -7,4 +7,4 @@ yiqilianqin = type=http-response,pattern=^https?:\/\/api\.(.*lianqin.*|mangofutu
 
 [MITM]
 
-hostname = %APPEND% api.*lianqin*.*,api.mangofuture.cn
+hostname = %APPEND% api.17lianqin.cn, api.lianqinba.com, api.mangofuture.cn, *lianqin*
