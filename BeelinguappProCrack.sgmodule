@@ -1,0 +1,9 @@
+#!name=BeelinguappProCrack
+#!desc=Hausd0rff
+
+[Script]
+# > Beelinguapp解锁永久高级版
+BeelinguappProCrack = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/BeelinguappProCrack.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
