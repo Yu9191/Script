@@ -5,4 +5,4 @@
 指尖时光 = type=http-request, pattern=https://integral2.zhijiantime.com, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/zjsg.js, timeout=60
 
 [MITM]
-hostname = %APPEND% wxapi.zhongyuedu.com
+hostname = %APPEND% integral2.zhijiantime.com
